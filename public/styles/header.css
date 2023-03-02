@@ -1,0 +1,26 @@
+.profile-header {
+  height: 470px;
+  width: 100%;
+  background-color: rgb(200, 161, 56);
+}
+
+.avatar {
+display: flex;
+justify-content: center;
+justify-items: center;
+height: 75%;
+width: auto;
+padding-top:5.5em;
+}
+.avatar-name {
+  display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom:1em ;
+}
+
+
+
+
+
+
