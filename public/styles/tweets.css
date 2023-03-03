@@ -1,7 +1,7 @@
-section#tweets-container  {
-  width: 100%;
-  display:flex;
-  background-color:#f4f1ec;
+#tweets-container {
+  width: 90%;
+  display: flex;
+  background-color: #f4f1ec;
   font-family: sans-serif;
   flex-direction: column;
 }
@@ -9,17 +9,16 @@ section#tweets-container  {
 .tweet {
   border: 3px solid black;
   width: 100%;
-  margin-top: 50px;
-  padding: 15px;
+  margin-top: 20px;
+  padding: 20px;
 
-  /* transition: box-shadow 0.1s; */
 }
 
 .tweet-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 20px;
   align-items: center;
 }
@@ -30,18 +29,17 @@ section#tweets-container  {
   align-items: flex-end;
 }
 
-article.tweet img {
+.tweet img {
   margin-left: 10px;
   margin-right: 10px;
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 70px;
+  max-height: 70px;
   height: auto;
   width: auto;
 }
 
 .user-handle {
-  color:#ced3e5;
-  margin: 10px;
+  color: #ced3e5;
 }
 
 .tweet-text {
@@ -49,7 +47,7 @@ article.tweet img {
   padding: 10px;
 }
 
-article.tweet:hover {
+.tweet:hover {
   box-shadow: 10px 10px #bbb8b8;
 }
 
@@ -59,8 +57,7 @@ article.tweet:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 7px;
-  margin-top: 10px;
+  padding-top: 20px;
   font-size: 15px;
 }
 
@@ -71,4 +68,10 @@ article.tweet:hover {
 
 .tweet-response i:hover {
   color: darkkhaki;
+}
+
+@media only screen and (min-width: 1024px) {
+  #tweets-container {
+    width: 100%;
+  }
 }

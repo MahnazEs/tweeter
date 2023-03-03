@@ -53,41 +53,54 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <div class="left"><span>Tweeter</span></div>
-    <div class="right"><span><strong>Write</strong> a new tweet</span>
+    <div class="logo"><span>Tweeter</span></div>
+    <div class="write-tweet"><span><strong>Write</strong> a new tweet</span>
       <i class="fa-sharp fa-solid fa-angles-down"></i>
     </div>
   </nav>
 
 
   <header class="profile-header">
-    <div class="avatar">
-      <img src="/images/profile-hex.png">
+    <div class="user-image">
+      <img class="user-image" src="/images/profile-hex.png">
     </div>
     <br>
-    <div class="avatar-name">
-      <h2>Your Name</h2>
+    <div class="user-name">
+      <h2>Mahnaz Es</h2>
     </div>
   </header>
 
 
 
   <!-- Page-specific (main) content here -->
-  <main class="container">
+  <main class="main-container">
 
+
+    <!--Animated Error Messages-->
+    <section id="error-message">
+      <span id="error-message-empty" class="error-message-box">
+        <i class="fas fa-exclamation-triangle" style="color: red"></i>
+        There is no tweet for submit. Please enter a tweet!!!
+        <i class="fas fa-exclamation-triangle" style="color: red"></i>
+      </span>
+      <span id="error-message-tooLong" class="error-message-box">
+        <i class="fas fa-exclamation-triangle" style="color: red"></i>
+        Your tweet is longer than 140 letters. Please fix it!!!
+        <i class="fas fa-exclamation-triangle" style="color: red"></i>
+      </span>
+    </section>
 
 
 
 
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
+      <h2 class="new-tweet-header">Compose Tweet</h2>
       <form action="/tweets/" method="POST" id="new-tweet-form">
-        <div class="content-tweet">
-          <label for="tweet-text" class="lable-tweet"></label>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-        </div>
-        <div style="border-top: 3px solid black;"></div>
-        <div class="btn-space">
+
+        <label for="tweet-text" class="lable-tweet"></label>
+        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+
+        <div class="new-tweet-footer">
           <button type="submit" class="btn-tweet" id="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
@@ -99,7 +112,6 @@
 
 
   </main>
-  <footer class="footer-tweet"></footer>
 
 
 
